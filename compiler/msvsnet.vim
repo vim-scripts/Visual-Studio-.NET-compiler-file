@@ -8,5 +8,5 @@ if exists("current_compiler")
 endif
 let current_compiler = "msvsnet"
 
-setlocal errorformat=\ %*%f:%l\ %t%[A-z]\ %n:\ %m
+setlocal errorformat=\ %#%f(%l)\ :\ %m
 setlocal makeprg=devenv
