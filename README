@@ -1,0 +1,7 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=524
+
+I use big Visual Studio .NET projects at work.  With .NET microsoft no longer supports exported project make files so nmake is dead for my purpoeses and I have to call devenv ( like so set makeprg=devenv\ project.vcproj\ -build\ debug). 
+
+The errorformat of devenv is a bit different from the old vc6 build tool, so here's a script with the error format in.
+
+This could actually get more elaborate, a buildproject script that took a project name as a parameter and build the apropiate  set makeprg= command and executes it could be done, but I'm in a hurry.
