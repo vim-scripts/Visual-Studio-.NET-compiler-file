@@ -1,12 +1,12 @@
 " Vim compiler file
-" Compiler:	Miscrosoft Visual C
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last Change:	2001 Sep 24
+" Compiler:	Miscrosoft Visual C 7
+" Maintainer:	John Connors <johnc@yagc.demon.co.uk>
+" Last Change:	2003 Jan 09 
 
 if exists("current_compiler")
   finish
 endif
 let current_compiler = "msvsnet"
 
-setlocal errorformat=\ %#%f(%l)\ :\ %m
+setlocal errorformat=\ %#%f(%l)\ :\ %#%t%[A-z]%#\ %m
 setlocal makeprg=devenv
