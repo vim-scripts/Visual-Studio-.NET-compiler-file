@@ -6,7 +6,7 @@
 if exists("current_compiler")
   finish
 endif
-let current_compiler = "msivsnet"
+let current_compiler = "msvsnet"
 
 setlocal errorformat=\ %*%f:%l\ %t%[A-z]\ %n:\ %m
 setlocal makeprg=devenv
